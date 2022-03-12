@@ -1,0 +1,38 @@
+*{
+    background-color: rgb(163, 112, 211);
+}
+button{
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: chartreuse;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+@keyframes spin{
+    from{
+        transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+        -moz-transform: rotateY(360deg);
+        -moz-transform: rotateY(360deg);
+    }
+}
+.imgspn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation-name: spin;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    -webkit-animation-name: spin;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 5s;
+}
